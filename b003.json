@@ -1,0 +1,697 @@
+{
+ "format": "hr-bench-annotation/1",
+ "schema_version": "oct26-v20",
+ "application_id": "737",
+ "build_id": "b003",
+ "task_fingerprint": "sha256:2586fa6ba33597f9395b3cfc2281a5102a138274c5d3e7db43c889fb982643e6",
+ "status": "finished",
+ "started_at": "2026-11-04T09:37:03+00:00",
+ "updated_at": "2026-11-04T14:18:50+00:00",
+ "finished_at": "2026-11-04T14:18:50+00:00",
+ "active_seconds": 6155,
+ "active_seconds_by_step": {
+  "S1.1": 1130,
+  "final": 130,
+  "wrap": 865,
+  "S1.2": 410,
+  "S1.3": 265,
+  "S1.4": 175,
+  "S1.5": 145,
+  "S1.6": 110,
+  "S1.7": 120,
+  "S1.8": 110,
+  "S1.9": 100,
+  "S1.10": 110,
+  "S1.11": 180,
+  "S1.12": 305,
+  "S1.13": 165,
+  "S1.14": 100,
+  "S1.15": 110,
+  "S1.16": 150,
+  "S1.17": 95,
+  "S1.18": 90,
+  "S1.19": 135,
+  "S1.20": 105,
+  "S1.21": 110,
+  "S1.22": 195,
+  "S1.25": 90,
+  "S1.26": 285
+ },
+ "answers": {
+  "session": {
+   "steering_quality": 5,
+   "behaviours": {
+    "clarified_goal": {
+     "answer": "Yes",
+     "step": "S1.1"
+    },
+    "set_mode": {
+     "answer": "Yes",
+     "step": "S1.1"
+    },
+    "gave_examples": {
+     "answer": "Yes",
+     "step": "S1.4"
+    },
+    "set_format": {
+     "answer": "Yes",
+     "step": "S1.1"
+    },
+    "added_context": {
+     "answer": "Yes",
+     "step": "S1.2"
+    },
+    "questioned_reasoning": {
+     "answer": "Yes",
+     "step": "S1.10"
+    },
+    "asked_approach": {
+     "answer": "No",
+     "step": null
+    },
+    "checked_claims": {
+     "answer": "Yes",
+     "step": "S1.5"
+    },
+    "refined": {
+     "answer": "Yes",
+     "step": "S1.19"
+    }
+   },
+   "agent_quality": 3,
+   "involvement": "The user led, the agent helped",
+   "claims_match": "Mostly",
+   "rationale": "the user provided clear, staged instructions, strict safety constraints,expected output, and repeated validation requirements throughout the 24 steps.\nthe agent implemented meaningful features and improved benchmark results but repeadtedly violated read only boundaries made inaccurate Git and validation claims and sometime overstated what its checks proved.\nstep 20 showed the user independently checking results while step 24 exposed weaknesses in packaging and trace privacy safeguards",
+   "confidence": "High"
+  },
+  "steps": {
+   "S1.1": {
+    "effect": "Hurt",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Neither",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": true,
+    "failure_types": [
+     "Kept repeating the same fix or command without progress"
+    ],
+    "noticed": "Can't tell",
+    "note": "the user explicitly requested a read only recoinnaissance task and prohobited file creation but the agent created 24 files including analysis script while performing investigation"
+   },
+   "S1.2": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Ran tests",
+    "asked": "No",
+    "should_have_asked": true,
+    "should_have_asked_note": "it should have respected the read only restrcition rather than creating files",
+    "failure": false,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.3": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Neither",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": false,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.4": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.5": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Neither",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.6": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Ran tests",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.7": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Ran an accuracy check",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.8": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Neither",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.9": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.10": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Ran an accuracy check",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.11": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Neither",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.12": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Ran tests",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.13": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.14": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Ran an accuracy check",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.15": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.16": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": true,
+    "checked": "Both",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.17": {
+    "effect": "Hurt",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Ran an accuracy check",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.18": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.19": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": true,
+    "checked": "Both",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.20": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.21": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Ran tests",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.22": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.25": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Ran an accuracy check",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.26": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Neither",
+    "asked": "No",
+    "should_have_asked": true,
+    "should_have_asked_note": "The trace selection requirements were not sufficiently established before creating the trace archive.\nso the agent should i have asked about this.",
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   }
+  },
+  "prompts": {
+   "S1.1": {
+    "reaction": "Not replying to the agent (first prompt, or a new topic)",
+    "intent": [
+     "Planning or design"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.2": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Testing",
+     "Limiting scope"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.3": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Testing",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.4": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.5": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Testing",
+     "Debugging",
+     "Limiting scope"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.6": {
+    "reaction": "Accepting it and moving on (ok, yes, continue)",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Limiting scope"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.7": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Testing",
+     "Debugging",
+     "Docs or packaging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.8": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Debugging",
+     "Docs or packaging",
+     "Limiting scope",
+     "Security or secrets"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.9": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.10": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   },
+   "S1.11": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Docs or packaging",
+     "Limiting scope"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.12": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   },
+   "S1.13": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   },
+   "S1.14": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Security or secrets",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   },
+   "S1.15": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Docs or packaging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   },
+   "S1.16": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   },
+   "S1.17": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Testing",
+     "Debugging",
+     "Docs or packaging",
+     "Limiting scope",
+     "Security or secrets",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   },
+   "S1.18": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Security or secrets",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   },
+   "S1.19": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Security or secrets",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   },
+   "S1.20": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Security or secrets",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   },
+   "S1.21": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Security or secrets",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   },
+   "S1.22": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Security or secrets",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   },
+   "S1.25": {
+    "reaction": "Questioning or checking the reply (are you sure? why? test it)",
+    "intent": [
+     "Planning or design",
+     "Testing",
+     "Docs or packaging",
+     "Limiting scope",
+     "Security or secrets",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   },
+   "S1.26": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Testing",
+     "Docs or packaging",
+     "Limiting scope",
+     "Security or secrets",
+     "Judges or scoring"
+    ],
+    "source": "Pasted from another AI",
+    "comment": null
+   }
+  },
+  "failures": null,
+  "flags": {}
+ }
+}

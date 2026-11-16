@@ -1,0 +1,495 @@
+{
+ "format": "hr-bench-annotation/1",
+ "schema_version": "oct26-v20",
+ "application_id": "737",
+ "build_id": "b018",
+ "task_fingerprint": "sha256:6dc7bbed0762ac0fa4170cce7921707cbae3797aa75616d38b990e12ca89ea38",
+ "status": "finished",
+ "started_at": "2026-11-04T17:29:08+00:00",
+ "updated_at": "2026-11-04T17:52:30+00:00",
+ "finished_at": "2026-11-04T17:52:30+00:00",
+ "active_seconds": 2080,
+ "active_seconds_by_step": {
+  "S1.1": 105,
+  "S1.2": 190,
+  "S1.3": 155,
+  "S1.4": 150,
+  "S1.5": 80,
+  "S1.6": 75,
+  "S1.7": 115,
+  "S1.8": 75,
+  "S1.9": 140,
+  "S1.10": 65,
+  "S1.11": 145,
+  "S1.12": 75,
+  "S1.13": 80,
+  "S1.14": 145,
+  "S1.15": 255,
+  "wrap": 165
+ },
+ "answers": {
+  "session": {
+   "steering_quality": 5,
+   "behaviours": {
+    "clarified_goal": {
+     "answer": "Yes",
+     "step": "S1.2"
+    },
+    "set_mode": {
+     "answer": "Yes",
+     "step": "S1.3"
+    },
+    "gave_examples": {
+     "answer": "Yes",
+     "step": "S1.3"
+    },
+    "set_format": {
+     "answer": "Yes",
+     "step": "S1.7"
+    },
+    "added_context": {
+     "answer": "Yes",
+     "step": "S1.7"
+    },
+    "questioned_reasoning": {
+     "answer": "Yes",
+     "step": "S1.5"
+    },
+    "asked_approach": {
+     "answer": "No",
+     "step": null
+    },
+    "checked_claims": {
+     "answer": "Yes",
+     "step": "S1.15"
+    },
+    "refined": {
+     "answer": "Yes",
+     "step": "S1.3"
+    }
+   },
+   "agent_quality": 4,
+   "involvement": "The user led, the agent helped",
+   "claims_match": "Mostly",
+   "rationale": "The user showed exceptionally strong direction from step 2 onward, providing detailed requirements, measurable acceptance criteria, safety constraints and corrections across multiple stages.\noverall this was a user led engineering process with the agent acting as the implementation and experimentation assistant.",
+   "confidence": "High"
+  },
+  "steps": {
+   "S1.1": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Neither",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.2": {
+    "effect": "Helped",
+    "human_corrected": true,
+    "reverted": null,
+    "checked": "Ran an accuracy check",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": true,
+    "failure_types": [
+     "Other"
+    ],
+    "noticed": "Yes, the user caught it",
+    "note": "the malformed input check initially failed because the runner assumed request files were inside the repository."
+   },
+   "S1.3": {
+    "effect": "Helped",
+    "human_corrected": true,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": true,
+    "failure_types": [
+     "Other"
+    ],
+    "noticed": "Yes, the user caught it",
+    "note": "the full run still had 12 degraded cases including one COMPLETE case without proof"
+   },
+   "S1.4": {
+    "effect": "Helped",
+    "human_corrected": true,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.5": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.6": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.7": {
+    "effect": "Helped",
+    "human_corrected": true,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": false,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.8": {
+    "effect": "Helped",
+    "human_corrected": true,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.9": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": true,
+    "failure_types": [
+     "Guessed instead of checking (the data, the code, the docs or the error)"
+    ],
+    "noticed": "Yes, the user caught it",
+    "note": "the attribution implementation can label written steps as unknown when no origin is found"
+   },
+   "S1.10": {
+    "effect": "Helped",
+    "human_corrected": true,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": false,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.11": {
+    "effect": "Helped",
+    "human_corrected": true,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": true,
+    "failure_types": [
+     "Wrote code that doesn't work (a bug, wrong logic, a crash)"
+    ],
+    "noticed": "Yes, the user caught it",
+    "note": "the first patch introduced a SyntaxError in main.py"
+   },
+   "S1.12": {
+    "effect": "Helped",
+    "human_corrected": true,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.13": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": null,
+    "failure_types": null,
+    "noticed": null,
+    "note": null
+   },
+   "S1.14": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "Yes, and it was needed",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": true,
+    "failure_types": [
+     "Guessed instead of checking (the data, the code, the docs or the error)"
+    ],
+    "noticed": "Yes, the user caught it",
+    "note": "the generated usage_report.md currently labels stage5_pilot2 as the \"Final full-dataset run\"."
+   },
+   "S1.15": {
+    "effect": "Helped",
+    "human_corrected": null,
+    "reverted": null,
+    "checked": "Both",
+    "asked": "No",
+    "should_have_asked": null,
+    "should_have_asked_note": null,
+    "failure": true,
+    "failure_types": [
+     "Claimed a result it did not get"
+    ],
+    "noticed": "Yes, the user caught it",
+    "note": "five audit records in case_45 were accepted by the verifier even though the narrowed rule_12 should have retained only audit_record_003."
+   }
+  },
+  "prompts": {
+   "S1.1": {
+    "reaction": "Not replying to the agent (first prompt, or a new topic)",
+    "intent": [
+     "Planning or design"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.2": {
+    "reaction": "Fixing something the agent got wrong",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Docs or packaging",
+     "Limiting scope",
+     "Cost or model choice",
+     "Security or secrets",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.3": {
+    "reaction": "Fixing something the agent got wrong",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Docs or packaging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.4": {
+    "reaction": "Fixing something the agent got wrong",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.5": {
+    "reaction": "Questioning or checking the reply (are you sure? why? test it)",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.6": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Cost or model choice",
+     "Security or secrets",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.7": {
+    "reaction": "Fixing something the agent got wrong",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.8": {
+    "reaction": "Fixing something the agent got wrong",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.9": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Limiting scope",
+     "Cost or model choice",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.10": {
+    "reaction": "Fixing something the agent got wrong",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Limiting scope",
+     "Cost or model choice",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.11": {
+    "reaction": "Answering the agent's question",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Docs or packaging",
+     "Limiting scope",
+     "Cost or model choice",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.12": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Docs or packaging",
+     "Limiting scope",
+     "Cost or model choice",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.13": {
+    "reaction": "Answering the agent's question",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Docs or packaging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.14": {
+    "reaction": "Asking for the next piece of work",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Docs or packaging",
+     "Limiting scope",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   },
+   "S1.15": {
+    "reaction": "Answering the agent's question",
+    "intent": [
+     "Planning or design",
+     "Building a feature",
+     "Testing",
+     "Debugging",
+     "Docs or packaging",
+     "Limiting scope",
+     "Cost or model choice",
+     "Security or secrets",
+     "Judges or scoring"
+    ],
+    "source": "Typed by the user",
+    "comment": null
+   }
+  },
+  "failures": null,
+  "flags": {}
+ }
+}
